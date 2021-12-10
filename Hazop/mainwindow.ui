@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1128</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hazop</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/64/Gnome Icons/64/Gnome-Colors-Emblem-Desktop-Red-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Colors-Emblem-Desktop-Red-64.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalMenuLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="setupButton">
+        <property name="text">
+         <string>Setup</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-System-Run-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-System-Run-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="messagingButton">
+        <property name="text">
+         <string>Messaging</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-Mail-Mark-Important-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Mail-Mark-Important-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="summaryButton">
+        <property name="text">
+         <string>Summary</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-X-Office-Presentation-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-X-Office-Presentation-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="personnelButton">
+        <property name="text">
+         <string>Personnel</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-System-Users-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-System-Users-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sessionsButton">
+        <property name="text">
+         <string>Sessions</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-X-Office-Calendar-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-X-Office-Calendar-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="drawingsButton">
+        <property name="text">
+         <string>Drawings</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-Preferences-Desktop-Peripherals-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Preferences-Desktop-Peripherals-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deviationsButton">
+        <property name="text">
+         <string>Deviations</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-Emblem-Important-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Emblem-Important-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="nodesButton">
+        <property name="text">
+         <string>Nodes</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-View-Sort-Descending-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-View-Sort-Descending-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="riskRankingButton">
+        <property name="text">
+         <string>Risk Ranking</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-Software-Update-Urgent-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Software-Update-Urgent-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="studyButton">
+        <property name="text">
+         <string>Study</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-Logviewer-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Logviewer-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="analysisButton">
+        <property name="text">
+         <string>Analysis</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/Gnome-X-Office-Spreadsheet-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-X-Office-Spreadsheet-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="actionsButton">
+        <property name="text">
+         <string>Actions</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/icons/48/Gnome Icons/48/User-Info-48.png</normaloff>:/icons/48/Gnome Icons/48/User-Info-48.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>48</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout" rowstretch="1,20">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QStackedWidget" name="stackedMainView">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="setupPage">
+            <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,3">
+             <item row="0" column="0">
+              <widget class="QTreeWidget" name="treeWidget">
+               <property name="rootIsDecorated">
+                <bool>true</bool>
+               </property>
+               <property name="headerHidden">
+                <bool>true</bool>
+               </property>
+               <column>
+                <property name="text">
+                 <string>Root</string>
+                </property>
+               </column>
+               <item>
+                <property name="text">
+                 <string>Custom Fields</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/48/Gnome Icons/48/Gnome-Text-X-Script-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Text-X-Script-48.png</iconset>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Action</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Gnome-Text-X-Script-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Text-X-Script-48.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Cause</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Company</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Consequence</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deviation</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deviation Detail</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Drawing</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Guide Word</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Node</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Parameter</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Person</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Safeguard</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Session</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Summary</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Task</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Text-X-Script-32.png</iconset>
+                 </property>
+                </item>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Study and Action Sheets</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/48/Gnome Icons/48/Accessories-Dictionary-48.png</normaloff>:/icons/48/Gnome Icons/48/Accessories-Dictionary-48.png</iconset>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Custom Columns</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Gnome-Emblem-Downloads-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Emblem-Downloads-48.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Deviations</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Gnome-Emblem-Important-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Emblem-Important-48.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Actions Sheet</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Gnome-Contact-New-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Contact-New-48.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Study Sheet</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Accessories-Dictionary-48.png</normaloff>:/icons/48/Gnome Icons/48/Accessories-Dictionary-48.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Study Numbering Modes</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Accessories-Dictionary-48.png</normaloff>:/icons/48/Gnome Icons/48/Accessories-Dictionary-48.png</iconset>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Grid Cell Formats</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/Gnome-Insert-Text-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Insert-Text-48.png</iconset>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Defualt Cell Format</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/48/Gnome Icons/48/Gnome-Insert-Text-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Insert-Text-48.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Defualt Column Heading Format</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/48/Gnome Icons/48/Gnome-Insert-Text-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-Insert-Text-48.png</iconset>
+                  </property>
+                 </item>
+                </item>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Personnel</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/48/Gnome Icons/48/Gnome-System-Users-48.png</normaloff>:/icons/48/Gnome Icons/48/Gnome-System-Users-48.png</iconset>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Roles</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/icons/48/Gnome Icons/48/User-Info-48.png</normaloff>:/icons/48/Gnome Icons/48/User-Info-48.png</iconset>
+                 </property>
+                </item>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QStackedWidget" name="stackedWidget_2">
+               <widget class="QWidget" name="page"/>
+               <widget class="QWidget" name="page_2"/>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="messagingPage"/>
+           <widget class="QWidget" name="summaryPage">
+            <layout class="QGridLayout" name="gridLayout_6" rowstretch="1,1,0,0,0,0,0" columnstretch="1,5,1,0,0">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Company:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QTextBrowser" name="descriptionText">
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="html">
+                <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="companyLineEdit"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="managerLineEdit"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Hazop Manager:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QTextBrowser" name="commentsText">
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+               <property name="html">
+                <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Description:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Comments:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="managerSelectButton">
+               <property name="text">
+                <string>Select</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QPushButton" name="companySelectButton">
+               <property name="text">
+                <string>Select</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="personnelPage"/>
+           <widget class="QWidget" name="sessionsPage"/>
+           <widget class="QWidget" name="drawingsPage"/>
+           <widget class="QWidget" name="deviationsPage"/>
+           <widget class="QWidget" name="nodesPage"/>
+           <widget class="QWidget" name="riskRankingPage"/>
+           <widget class="QWidget" name="studyPage"/>
+           <widget class="QWidget" name="analysisPage"/>
+           <widget class="QWidget" name="actionsPage"/>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_3" columnstretch="10,0">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="curViewLabel">
+             <property name="text">
+              <string>Setup</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox">
+             <property name="sizeAdjustPolicy">
+              <enum>QComboBox::AdjustToContents</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Switch Windows</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1128</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew_Project"/>
+    <addaction name="actionOpen_Project"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_Project_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionPrint_Preview"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionC_ut"/>
+    <addaction name="action_Copy"/>
+    <addaction name="action_Paste"/>
+    <addaction name="separator"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_Project"/>
+   <addaction name="actionOpen_Project"/>
+   <addaction name="actionSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionPrint_Preview"/>
+   <addaction name="actionPrint"/>
+   <addaction name="separator"/>
+   <addaction name="actionC_ut"/>
+   <addaction name="action_Copy"/>
+   <addaction name="action_Paste"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionNew_Project">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-New-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-New-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New Project</string>
+   </property>
+   <property name="iconText">
+    <string>New Project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Save-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Save-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save Project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_Project_as">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/32/Gnome Icons/32/Gnome-Document-Save-As-32.png</normaloff>:/icons/32/Gnome Icons/32/Gnome-Document-Save-As-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>S&amp;ave Project as...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Application-Exit-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Application-Exit-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Open-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Open-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open Project</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Print-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Print-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Print</string>
+   </property>
+  </action>
+  <action name="actionPrint_Preview">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Print-Preview-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Document-Print-Preview-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print Preview</string>
+   </property>
+  </action>
+  <action name="actionC_ut">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Cut-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Cut-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;ut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_Copy">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Copy-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Copy-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_Paste">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Paste-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Paste-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Undo-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Undo-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>U&amp;ndo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Redo-64.png</normaloff>:/icons/64/Gnome Icons/64/Gnome-Edit-Redo-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
